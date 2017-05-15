@@ -1,0 +1,94 @@
+package dsa;
+
+
+import java.util.Scanner;
+
+/*
+     
+    This is a program  to check if admin or not  through the use of
+    1- Scanner
+    2- Array
+    3- if,else if , else 
+
+     by Sadiclown.
+
+
+*/
+
+public class DSA  extends A1 {
+
+    
+
+    
+ 
+    public static void main(String[] args) {
+    
+    //import Scanner    
+    Scanner sc = new Scanner(System.in);   
+        
+    
+    //Déclarer les Variable. 
+    String lastname;
+    String firstname;
+    int id;
+    
+    
+    System.out.println("********** : Welcome to  check  Admin  : **********");
+    
+    //View a message for the user and input value
+    System.out.print("\nEnter Your Last Name Please :    ");
+    lastname = sc.nextLine();
+    
+    //View a message
+    System.out.print("\nEnter Your First  Name Please  :    ");
+    firstname = sc.nextLine();
+    
+    //View a message
+    System.out.print("\nEntre Your id Please :   ");
+    id = sc.nextInt();
+   
+       //Create New Array   
+       int x[] = new int[10]; 
+       x[0] = 01;
+       x[1] = 25;
+       x[2] = 32;
+       x[3] = 36;
+       x[4] = 42;
+       
+       
+       //Start condition 1
+       if(id == x[0]){
+           
+           System.out.println("\nWelcome to Your system Admine 1  " + lastname + firstname);
+           
+       }else if(id == x[1]){
+           
+           System.out.println("\nWelcome to Your system Admine 2   " + lastname + firstname);
+           
+       }else if(id == x[2]){
+           
+           System.out.println("\nWelcome to Your system Admine 3   " + lastname + firstname);
+           
+       }else if(id == x[3]){
+           
+           System.out.println("\nWelcome to Your system Admine 4    " + lastname + firstname);
+           
+       }else if(id == x[4]){
+           
+           System.out.println("\nWelcome to Your system Admine 5     " + lastname + firstname);
+           
+       }else{
+           
+          // view Error message
+          System.out.println("\nSorry " + lastname + firstname  +  "\nYour id is Not here !!!");
+           
+       }
+       
+        
+       
+    
+ 
+
+        
+} 
+}
